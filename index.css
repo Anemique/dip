@@ -1,0 +1,463 @@
+@charset "UTF-8";
+.content {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  width: 100%;
+  display: flex;
+  /*  background-image: url("./../../images/content/back.png");*/
+  background-color: #e27d5f;
+  /* .piono {
+     width: 100%;
+     height: 200px;
+     background-image: url("./../../images/mainPage/piano.svg");
+   }*/
+}
+.content .orange {
+  background-attachment: fixed;
+  /*  background-image: url("https://wallbox.ru/resize/1920x1080/wallpapers/main/201129/chernyy-prizma-cvet-90ad9d3.jpg");
+    */
+  background-size: 100% 100%;
+}
+.content .white {
+  background-attachment: fixed;
+  background-image: url("https://sysblok.ru/wp-content/uploads/2019/07/marius-masalar-rpomlgwai2w-unsplash.jpg");
+  background-size: 100% 100%;
+}
+.content .content-grid-double {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template: 1fr 1fr 1fr/180px 1fr 1fr;
+}
+.content .main__school {
+  grid-row: 1/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  align-atems: center;
+}
+.content .main__school img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-right: 2px solid white;
+}
+.content .main__about {
+  grid-row: 1/4;
+  grid-column: 3/4;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  height: 90%;
+}
+.content .main__about .info-block {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background-color: #333333;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 0px #fff, 9px 7px 10px rgba(0, 0, 0, 0.2), 9px 17px 2px rgba(0, 0, 0, 0.2), 9px 27px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.content .main__about .info-block .info-block__title {
+  width: 70%;
+  height: 20%;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border-bottom: 2px solid #e8a87c;
+}
+.content .main__about .info-block .info-block__title span {
+  color: #84cdca;
+  font-size: 2.5vw;
+}
+.content .main__about .info-block .info-block__text {
+  width: 100%;
+  height: 30%;
+  padding: 10px;
+  text-align: center;
+}
+.content .main__about .info-block .info-block__text span {
+  color: white;
+  font-size: 1.5vw;
+}
+.content .main__about .info-block .info-block__image {
+  width: 100%;
+  height: 30%;
+}
+.content .main__about .info-block .info-block__image img {
+  width: 20%;
+  height: 100%;
+}
+.content .main__about .info-block .child, .content .main__about .info-block .rusmap {
+  display: flex;
+  justify-content: flex-end;
+}
+.content .main__about .info-block .top {
+  display: flex;
+  justify-content: flex-start;
+}
+.content .content-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template: 1fr 1fr 1fr/180px 1fr 1fr 1fr;
+}
+.content .main__school-name {
+  grid-row: 1/3;
+  grid-column: 2/5;
+  align-self: self-start;
+  justify-self: center;
+  font-family: Luminari, fantasy;
+  font-size: 3.7vw;
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-radius: 30px;
+  color: #84cdca;
+  padding: 10px;
+  margin: 10px;
+  text-shadow: 1px -1px 0 black, -1px 2px 1px black, -2px 4px 1px black, -3px 6px 1px black, -4px 8px 1px black;
+}
+.content .main__info {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+  font-size: 1.5vw;
+  color: white;
+  text-shadow: 1px -1px 0 black;
+  width: 80%;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-radius: 30px;
+  padding: 10px;
+}
+.content .content-arow {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-arow .arrow-down {
+  display: flex;
+  width: 30%;
+  height: 30%;
+}
+.content .content-arow .arrow-down span {
+  cursor: pointer;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-right: 8px solid #e8a87c;
+  border-bottom: 8px solid #84cdca;
+  border-radius: 10px;
+  transform: rotate(-45deg);
+  margin: -10px;
+  animation: arrow-down 2s infinite;
+}
+.content .content-arow .arrow-down span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.content .content-arow .arrow-down span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+    transform: rotate(-45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-45deg) translate(20px, 20px);
+  }
+}
+.content .features-back {
+  background-size: cover;
+  background-image: url("https://killer-antiplagiat.ru/ArticlesFiles/f3780173-5a43-40da-a5e1-d8294c7b812f.jpg");
+  /* background-color: $orange;*/
+  background-attachment: fixed;
+}
+.content .features__logo {
+  grid-row: 1/2;
+  grid-column: 2/5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .features__logo span {
+  font-family: Luminari, fantasy;
+  font-size: 3.5vw;
+  text-align: center;
+  color: white;
+  text-shadow: 1px -1px 0 black, -1px 2px 1px black, -2px 4px 1px black, -3px 6px 1px black, -4px 8px 1px black;
+}
+.content .features__test {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  border: 1px solid white;
+  /*   border-radius: 0% 0% 100% 100% / 100% 100% 100% 100%;*/
+}
+.content .features__directions {
+  grid-row: 2/4;
+  grid-column: 3/4;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.4);
+  border: 1px solid white;
+}
+.content .features__selection {
+  grid-row: 2/4;
+  grid-column: 4/5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  border: 1px solid white;
+  /*  border-radius: 0% 0% 100% 100% / 100% 100% 100% 100%;*/
+}
+.content .features__name {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-bottom: 2px solid #e8a87c;
+}
+.content .features__name span {
+  color: #84cdca;
+  font-size: 2.5vw;
+}
+.content .features__content {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-bottom: 2px solid #e8a87c;
+}
+.content .features__content span {
+  text-align: center;
+  color: white;
+  font-size: 1.5vw;
+}
+.content .features__button {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .features__button button {
+  width: 40%;
+  height: 20%;
+  border-radius: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8vw;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: black;
+  background-color: #e8a87c;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.content .features__button button:hover {
+  background: #84cdca;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+  color: black;
+  transform: translateY(-7px);
+}
+
+.sidebar {
+  position: fixed;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: rgba(51, 51, 51, 0.6);
+  height: 100%;
+  text-align: center;
+  width: 180px;
+  border-right: solid white 2px;
+}
+.sidebar .sidebar__logo {
+  padding: 15px;
+}
+.sidebar .sidebar__logo svg path {
+  fill: white;
+}
+.sidebar .sidebar__item {
+  padding: 7px;
+}
+.sidebar .sidebar__item a {
+  font-size: 18px;
+  color: white;
+  transition: color 0.8s;
+}
+.sidebar .sidebar__item :hover {
+  color: #e8a87c;
+  transition: color 0.8s;
+}
+.sidebar .sidebar__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.sidebar .numbers {
+  font-size: 14px;
+}
+.sidebar .numbers .number-name {
+  margin-bottom: 5px;
+}
+.sidebar .numbers .number-name span {
+  color: white;
+}
+.sidebar .numbers a {
+  color: white;
+}
+.sidebar .numbers .number-office, .sidebar .numbers .number-school {
+  background-color: #333333;
+  width: 140px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 5px;
+  border-left: 3px solid #e8a87c;
+}
+.sidebar .sidebar__music-line svg path {
+  width: 180px;
+  height: 80px;
+}
+.sidebar .social-networks {
+  width: 160px;
+  display: flex;
+  margin: auto;
+}
+.sidebar .social-networks svg path {
+  width: 40px;
+  height: 40px;
+}
+.sidebar .social-networks .instagram, .sidebar .social-networks .facebook, .sidebar .social-networks .twitter, .sidebar .social-networks .youtube {
+  cursor: pointer;
+}
+.sidebar .social-networks .instagram svg path, .sidebar .social-networks .facebook svg path, .sidebar .social-networks .twitter svg path, .sidebar .social-networks .youtube svg path {
+  fill: white;
+  transition: fill 0.8s;
+}
+.sidebar .social-networks .instagram:hover svg path {
+  fill: hotpink;
+  transition: fill 0.8s;
+}
+.sidebar .social-networks .facebook:hover svg path {
+  fill: blue;
+  transition: fill 0.8s;
+}
+.sidebar .social-networks .twitter:hover svg path {
+  fill: #84cdca;
+  transition: fill 0.8s;
+}
+.sidebar .social-networks .youtube:hover svg path {
+  fill: darkred;
+  transition: fill 0.8s;
+}
+.sidebar .sidebar__map span {
+  font-size: 14px;
+  color: white;
+}
+.sidebar .sidebar__map svg path {
+  fill: white;
+}
+.sidebar .sidebar__copy {
+  position: absolute;
+  bottom: 10px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+}
+.sidebar .sidebar__copy span {
+  font-size: 14px;
+  color: white;
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 24px;
+  /* ширина для вертикального скролла */
+  height: 8px;
+  /* высота для горизонтального скролла */
+  background-color: #333333;
+  border-radius: 20px;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border: solid 2px #40b3a2;
+  border-radius: 20px;
+}
+
+/* Стрелки */
+/*::-webkit-scrollbar-button:vertical:start:decrement {
+  background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+  linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+  linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  background:
+          linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+          linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+          linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}*/
+::-webkit-scrollbar-button:horizontal:start:decrement {
+  background: linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: white;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+  background: linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.section {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mouse-parallax-bg {
+  transition: all 0.1s ease;
+}
